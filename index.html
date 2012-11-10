@@ -1,0 +1,36 @@
+<html>
+<head>
+        <title>Todo for Chrome</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/base.css" type="text/css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+        $('.description_active').click(function(){
+            $(this).removeClass('description_active').val('write todos here');
+        });        
+  });
+  
+</script>
+    </head>
+    <body>
+        <center>
+            <img src="cliptop.png" class="cliptop">
+        <div id="container"><div>
+            <br>
+            <form id="todo-form">
+                <input id="todo" type="text" class="description_active"/>
+                <input id="submit" type="submit" value="">
+            </form>
+            <ul id="show-items"></ul>
+            <a href="#" id="clear-all"><img src="clear.png"></a>
+        </div>
+        <script src="js/jquery-1.4.4.min.js"></script>
+        <script src="js/jquery-ui-1.8.7.custom.min.js"></script>
+        <script src="js/jquery.inlineedit.js"></script>
+        <script src="js/pubsub.js"></script>
+        <script src="js/base.js"></script>
+    </center>
+    </body>
+</html>

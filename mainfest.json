@@ -1,0 +1,15 @@
+{
+  "name": "todo",
+  "description": "what todo, what todo. Well lets help you.",
+  "manifest_version": 2
+  "version": "1",
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "permissions": [
+    "unlimited_storage",
+    "notifications"
+  ]
+}
